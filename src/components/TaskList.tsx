@@ -18,7 +18,7 @@ export function TaskList() {
     if (newTaskTitle === '') {
       return;
     }
-    
+
     let rand = Math.floor(Math.random() * 100000);
     const newTask = { id: rand, title: newTaskTitle, isComplete: false };
     setTasks([...tasks, newTask]);
@@ -50,7 +50,7 @@ export function TaskList() {
         <div className="input-group">
           <input
             type="text"
-            placeholder="Adicionar novo todo"
+            placeholder="Adicionar novo todo test"
             onChange={e => setNewTaskTitle(e.target.value)}
             value={newTaskTitle}
           />
